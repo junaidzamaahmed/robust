@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import { useEffect, useState } from "react";
+import { LoadingScreen } from "../components/LoadingScreen/LoadingScreen";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  const [isLoading, setIsLoading] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => setIsLoading(false), 3000), [];
+  // });
+  return isLoading ? <LoadingScreen /> : <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
