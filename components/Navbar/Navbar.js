@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
+import Image from "next/image";
+import logo from "/public/logo.png";
 
 export const Navbar = () => {
   const navigation = [
@@ -20,12 +22,8 @@ export const Navbar = () => {
         >
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                className="h-8"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <span className="sr-only">Robust</span>
+              <Image width={50} height={50} src={logo} alt="" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -66,12 +64,8 @@ export const Navbar = () => {
             <div className="flex h-9 items-center justify-between">
               <div className="flex">
                 <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Your Company</span>
-                  <img
-                    className="h-8"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt=""
-                  />
+                  <span className="sr-only">Robust</span>
+                  <Image width={50} height={50} src={logo} alt="" />
                 </a>
               </div>
               <div className="flex">
