@@ -30,7 +30,7 @@ export const Player = () => {
         />
         <div>
           <h3>Podcast Name</h3>
-          <p className="text-sm">Junaid Ahmed, Sharnit Saha</p>
+          <p className="md:text-sm">Junaid Ahmed, Sharnit Saha</p>
         </div>
       </div>
       {/* CENTER */}
@@ -55,7 +55,7 @@ export const Player = () => {
       {/* RIGHT */}
       <div className="flex items-center space-x-3 md:space-x-4 justify-end pr-5">
         <VolUp className="w-5 h-5 cursor-pointer hover:scale-125 transition transform duration-100 ease-out" />
-        <input type="range" />
+        <input className="w-14 md:w-28" type="range" />
         <VolDown className="w-5 h-5 cursor-pointer hover:scale-125 transition transform duration-100 ease-out" />
       </div>
     </div>
